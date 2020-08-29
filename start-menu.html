@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar{
+            overflow-x:hidden;
+            background-color:rgba(110, 200, 2555, 0.8);
+            display: flex;
+            flex-direction: row;
+        }
+        .navbar a{
+            padding:9px; 
+            box-sizing:border-box;
+            border-bottom: 3px solid #42f; 
+        }
+        @media screen and (max-width: 678px) {
+            .navbar{
+                background-color:rgba(110, 200, 2555, 0.8);
+                flex-direction: column;
+            }
+            .navbar a{
+                border-bottom:3px solid transparent; 
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="navbar">
+        <a href="javascript:void(0);">Home</a>
+        <a href="javascript:void(0);">Start</a>
+        <a href="index.html">Game</a>
+    </div>
+</body>
+</html>
