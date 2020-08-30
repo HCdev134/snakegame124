@@ -64,6 +64,9 @@ body{
     color: #fff; 
     max-height: 20vh; 
 }
+h1.frame-hello{
+    color: #fff; 
+}
 footer{
 
     display: flex; 
