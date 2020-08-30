@@ -1,0 +1,87 @@
+* {
+    margin:0;
+    padding:0;
+}
+body{
+    
+    overflow-x: hidden;
+    background-color: #000;
+    
+    
+}
+
+.snake-game {
+    background-color:#ccc; 
+    width: 100vmin;
+    height: 80vmin;
+    margin: 0 auto; 
+    /* margin-top:0;
+    margin-right: 20%;
+    margin-bottom:20%;
+    margin-left:20%; */
+    
+    
+    display: grid;
+    grid-template-rows: repeat(21, 1fr);
+    grid-template-columns: repeat(21, 1fr);
+
+    border: 1px solid pink; 
+    box-sizing: border-box;
+}
+
+.snake{
+    background-color: #42f;
+    border: .25vmin solid black;
+}
+
+.food{
+    background-color: #cef32c;
+    border: .25vmin solid black;
+}
+
+.navbar{
+    overflow-x:hidden;
+    background-color:rgba(110, 200, 2555, 0.8);
+    display: flex;
+    flex-direction: row;
+}
+.navbar a{
+    box-sizing:border-box;
+    padding:9px; 
+    margin: 0px 10px 0px; 
+    
+    border-bottom: 3px solid transparent; 
+    text-decoration: none;
+    color: #000; 
+
+}
+.navbar a:hover{
+    border-bottom:3px solid #cef32c; 
+}
+.control-description{
+    display: block;
+    background: #444; 
+    color: #fff; 
+    max-height: 20vh; 
+}
+footer{
+
+    display: flex; 
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 20vh; 
+    max-height: 100%; 
+    background: #111; 
+    color: #fff; 
+}
+@media screen and (max-width: 678px) {
+    .navbar{
+        background-color:rgba(110, 200, 2555, 0.8);
+        flex-direction: column;
+    }
+    .navbar a{
+        border-bottom: none;
+        border-radius: 4px; 
+    }
+}
